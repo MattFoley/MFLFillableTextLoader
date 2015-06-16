@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Tj. All rights reserved.
 //
 
-#import "MFLFillableTextView.h"
+#import "MFLFillableTextLoader.h"
 #import "MFLBorderLabel.h"
 
 // These two Enum types are currently not used at all. Will only fill left to right for now, and will only fill flatly.
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, MFLTextFillDirection)
 };
 
 
-@interface MFLFillableTextView ()
+@interface MFLFillableTextLoader ()
 
 @property MFLTextFillStyle fillStyle;
 @property MFLTextFillDirection fillDirection;
@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, MFLTextFillDirection)
 
 @end
 
-@implementation MFLFillableTextView
+@implementation MFLFillableTextLoader
 
 UIColor* UIColorFromRGB(unsigned int rgbValue) {
     return [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0

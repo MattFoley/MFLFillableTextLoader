@@ -14,7 +14,7 @@
  
  */
  
-@interface MFLFillableTextView : UIView
+@interface MFLFillableTextLoader : UIView
 
 UIColor* UIColorFromRGB(unsigned int rgbValue);
 

@@ -20,8 +20,8 @@
 		324E3D311B2C632000A28F84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 324E3D301B2C632000A28F84 /* Images.xcassets */; };
 		324E3D341B2C632000A28F84 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324E3D321B2C632000A28F84 /* LaunchScreen.xib */; };
 		324E3D401B2C632000A28F84 /* MFLTextFillLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 324E3D3F1B2C632000A28F84 /* MFLTextFillLoadingTests.m */; };
-		3289D1A91B2CF28A0064543F /* MFLFillableTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3289D1A81B2CF28A0064543F /* MFLFillableTextView.xib */; };
-		32BEEADE1B2C71E700BAF657 /* MFLFillableTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BEEADB1B2C71E700BAF657 /* MFLFillableTextView.m */; };
+		3289D1A91B2CF28A0064543F /* MFLFillableTextLoader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3289D1A81B2CF28A0064543F /* MFLFillableTextLoader.xib */; };
+		32BEEADE1B2C71E700BAF657 /* MFLFillableTextLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BEEADB1B2C71E700BAF657 /* MFLFillableTextLoader.m */; };
 		32BEEAF91B2CAA8A00BAF657 /* MFLBorderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BEEAF81B2CAA8A00BAF657 /* MFLBorderLabel.m */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +55,9 @@
 		324E3D391B2C632000A28F84 /* MFLTextFillLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MFLTextFillLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		324E3D3E1B2C632000A28F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		324E3D3F1B2C632000A28F84 /* MFLTextFillLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFLTextFillLoadingTests.m; sourceTree = "<group>"; };
-		3289D1A81B2CF28A0064543F /* MFLFillableTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFLFillableTextView.xib; sourceTree = "<group>"; };
-		32BEEADA1B2C71E700BAF657 /* MFLFillableTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLFillableTextView.h; sourceTree = "<group>"; };
-		32BEEADB1B2C71E700BAF657 /* MFLFillableTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLFillableTextView.m; sourceTree = "<group>"; };
+		3289D1A81B2CF28A0064543F /* MFLFillableTextLoader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFLFillableTextLoader.xib; sourceTree = "<group>"; };
+		32BEEADA1B2C71E700BAF657 /* MFLFillableTextLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLFillableTextLoader.h; sourceTree = "<group>"; };
+		32BEEADB1B2C71E700BAF657 /* MFLFillableTextLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLFillableTextLoader.m; sourceTree = "<group>"; };
 		32BEEAF71B2CAA8A00BAF657 /* MFLBorderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFLBorderLabel.h; sourceTree = "<group>"; };
 		32BEEAF81B2CAA8A00BAF657 /* MFLBorderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFLBorderLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,9 +149,9 @@
 		32BEEAD91B2C71E700BAF657 /* MFLFillableText */ = {
 			isa = PBXGroup;
 			children = (
-				32BEEADA1B2C71E700BAF657 /* MFLFillableTextView.h */,
-				32BEEADB1B2C71E700BAF657 /* MFLFillableTextView.m */,
-				3289D1A81B2CF28A0064543F /* MFLFillableTextView.xib */,
+				32BEEADA1B2C71E700BAF657 /* MFLFillableTextLoader.h */,
+				32BEEADB1B2C71E700BAF657 /* MFLFillableTextLoader.m */,
+				3289D1A81B2CF28A0064543F /* MFLFillableTextLoader.xib */,
 				32BEEAE71B2C7C1600BAF657 /* Text Paths */,
 			);
 			path = MFLFillableText;
@@ -249,7 +249,7 @@
 				324E3D2F1B2C632000A28F84 /* Main.storyboard in Resources */,
 				3241954F1B2DF0EC002E9021 /* SWCrawlTitle.ttf in Resources */,
 				3241954E1B2DF0EC002E9021 /* SWCrawlBody.ttf in Resources */,
-				3289D1A91B2CF28A0064543F /* MFLFillableTextView.xib in Resources */,
+				3289D1A91B2CF28A0064543F /* MFLFillableTextLoader.xib in Resources */,
 				3241954D1B2DF0EC002E9021 /* Franklin_Gothic_Book.ttf in Resources */,
 				324195511B2DF7E2002E9021 /* starBg.png in Resources */,
 				324E3D341B2C632000A28F84 /* LaunchScreen.xib in Resources */,
@@ -275,7 +275,7 @@
 				32BEEAF91B2CAA8A00BAF657 /* MFLBorderLabel.m in Sources */,
 				324E3D261B2C632000A28F84 /* AppDelegate.m in Sources */,
 				324E3D291B2C632000A28F84 /* MFLTextFillLoading.xcdatamodeld in Sources */,
-				32BEEADE1B2C71E700BAF657 /* MFLFillableTextView.m in Sources */,
+				32BEEADE1B2C71E700BAF657 /* MFLFillableTextLoader.m in Sources */,
 				324E3D2C1B2C632000A28F84 /* ViewController.m in Sources */,
 				324E3D231B2C632000A28F84 /* main.m in Sources */,
 			);

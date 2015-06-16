@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "MFLFillableTextView.h"
+#import "MFLFillableTextLoader.h"
 
 @interface ViewController ()
 
-@property MFLFillableTextView *loader;
-@property (weak) IBOutlet MFLFillableTextView *ibLoader;
+@property MFLFillableTextLoader *loader;
+@property (weak) IBOutlet MFLFillableTextLoader *ibLoader;
 
 @end
 
@@ -30,7 +30,7 @@
                                                                                NSForegroundColorAttributeName : UIColorFromRGB(0x4bd5ee),
                                                                                NSParagraphStyleAttributeName : para}];
 
-    self.loader = [[MFLFillableTextView alloc] initWithString:@"CRawL\nCreatoR"
+    self.loader = [[MFLFillableTextLoader alloc] initWithString:@"CRawL\nCreatoR"
                                                          font:[UIFont fontWithName:@"StarJedi" size:28]
                                                     alignment:NSTextAlignmentCenter
                                                     withFrame:CGRectMake(0, 0, 320, 400)];

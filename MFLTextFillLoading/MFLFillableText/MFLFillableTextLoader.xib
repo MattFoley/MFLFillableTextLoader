@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFLFillableTextView">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFLFillableTextLoader">
             <connections>
                 <outlet property="detailLabel" destination="XkL-Xp-j4V" id="VLX-il-n3J"/>
                 <outlet property="fillLabel" destination="fRM-nG-VIo" id="3vi-ag-yS1"/>
