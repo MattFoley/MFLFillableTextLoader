@@ -65,7 +65,6 @@
                                                             attribute:NSLayoutAttributeNotAnAttribute
                                                            multiplier:1.0
                                                              constant:280]];
-    [self.loader setClipsToBounds:YES];
 
 
     [self.ibLoader setDetailText:details];
