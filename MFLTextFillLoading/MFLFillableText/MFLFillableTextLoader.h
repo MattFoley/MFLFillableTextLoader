@@ -63,7 +63,7 @@ UIColor* UIColorFromRGB(unsigned int rgbValue);
 /**
  *  This color will be used for the unfilled portion of the text as it fills.
  */
-@property (nonatomic) IBInspectable UIColor *backgroundColor;
+@property (nonatomic) IBInspectable UIColor *unfilledTextColor;
 
 /**
  *  Subtitle to display, usually explains the loading. All aspects of the attributed string will be followed.

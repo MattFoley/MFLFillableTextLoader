@@ -97,9 +97,12 @@ UIColor* UIColorFromRGB(unsigned int rgbValue) {
 
     [self.nibView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self setTranslatesAutoresizingMaskIntoConstraints:NO];
-    
+
     [self addSubview:self.nibView];
     [self.nibView setFrame:self.bounds];
+    [self.nibView setBackgroundColor:[UIColor clearColor]];
+    [self setBackgroundColor:[UIColor clearColor]];
+
     NSDictionary *views = NSDictionaryOfVariableBindings(_nibView);
     [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[_nibView]|"
                                                                  options:0
@@ -115,7 +118,7 @@ UIColor* UIColorFromRGB(unsigned int rgbValue) {
 {
     [self.strokeLabel setStrokeColor:self.strokeColor];
     [self.strokeLabel setStrokeWidth:self.strokeWidth];
-    [self.strokeLabel setTextColor:self.backgroundColor];
+    [self.strokeLabel setTextColor:self.unfilledTextColor];
     [self.strokeLabel setFont:self.fillableFont];
     [self.strokeLabel setTextAlignment:self.textAlignment];
     [self.strokeLabel setText:self.fillableString];
@@ -196,14 +199,16 @@ UIColor* UIColorFromRGB(unsigned int rgbValue) {
 
 - (void)setProgress:(CGFloat)progress
 {
-    _progress = MIN(progress, 1.0f);
-    [self.percentLabel setText:[NSString stringWithFormat:@"%.2f%%", self.progress * 100]];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _progress = MIN(progress, 1.0f);
+        [self.percentLabel setText:[NSString stringWithFormat:@"%.2f%%", self.progress * 100]];
 
-    [UIView animateWithDuration:.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-        [self.fillLabelContainerWidth setConstant:CGRectGetWidth(self.fillLabelContainer.superview.frame) * self.progress];
-        [self setNeedsUpdateConstraints];
-        [self layoutIfNeeded];
-    } completion:nil];
+        [UIView animateWithDuration:.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+            [self.fillLabelContainerWidth setConstant:CGRectGetWidth(self.fillLabelContainer.superview.frame) * (self.progress * .7)];
+            [self setNeedsUpdateConstraints];
+            [self layoutIfNeeded];
+        } completion:nil];
+    });
 }
 
 @end
