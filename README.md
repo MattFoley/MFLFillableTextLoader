@@ -3,6 +3,7 @@ Loading/progress indicator based on filling stroked text.
 
 ![](http://i.imgur.com/8nVAZ6t.gif)
 
+### Code Example
 You can create an MFLFillableTextLoader either in a xib or in code. Here is a short code example:
 
 ```objc
@@ -25,5 +26,16 @@ You can create an MFLFillableTextLoader either in a xib or in code. Here is a sh
     [self.loader setStrokeWidth:4];
 ```
 
+### Usage
+
+After creation, you can then add it to a UIView as a subview, and update the progress as you need to. It will automatically update it's fill.
+
+```objc
+    [self.view addSubview:self.loader];
+    [self.loader setProgress:<Progress 0.0 - 1.0>];
+```
+
+
+### Further Customization
 
 You can find a much more detailed example in the sample project found in this repo, with examples of both xib creation and in code, as well as an example animation to use.
