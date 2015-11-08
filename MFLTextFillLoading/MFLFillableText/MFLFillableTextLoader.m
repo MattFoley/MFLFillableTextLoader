@@ -204,7 +204,7 @@ UIColor* UIColorFromRGB(unsigned int rgbValue) {
         [self.percentLabel setText:[NSString stringWithFormat:@"%.2f%%", self.progress * 100]];
 
         [UIView animateWithDuration:.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
-            [self.fillLabelContainerWidth setConstant:CGRectGetWidth(self.fillLabelContainer.superview.frame) * (self.progress * .7)];
+            [self.fillLabelContainerWidth setConstant:CGRectGetWidth(self.fillLabel.frame) * self.progress];
             [self setNeedsUpdateConstraints];
             [self layoutIfNeeded];
         } completion:nil];
