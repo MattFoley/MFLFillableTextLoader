@@ -24,7 +24,6 @@
 
     NSMutableParagraphStyle *para = [[NSMutableParagraphStyle alloc] init];
     [para setAlignment:NSTextAlignmentCenter];
-
     NSAttributedString *details = [[NSAttributedString alloc] initWithString:@"Never tell me the odds."
                                                                   attributes:@{NSFontAttributeName : [UIFont fontWithName:@"Franklin Gothic Book" size:18],
                                                                                NSForegroundColorAttributeName : UIColorFromRGB(0x4bd5ee),
@@ -38,7 +37,6 @@
     [self.loader setDetailText:details];
     [self.loader setProgressFont:[UIFont fontWithName:@"SW Crawl Body" size:18]];
     [self.loader setStrokeColor:UIColorFromRGB(0xe5b13a)];
-    [self.loader setBackgroundColor:[UIColor blackColor]];
     [self.loader setStrokeWidth:4];
 
     [self.view addSubview:self.loader];
@@ -72,7 +70,6 @@
     [self.ibLoader setFillableFont:[UIFont fontWithName:@"StarJedi" size:28]];
     [self.ibLoader setTextAlignment:NSTextAlignmentCenter];
     [self.ibLoader setStrokeColor:UIColorFromRGB(0xe5b13a)];
-    [self.ibLoader setBackgroundColor:[UIColor blackColor]];
 
     [self updateProgress];
     [self panLoaderInFromBelow];
@@ -80,7 +77,7 @@
 
 - (void)updateProgress
 {
-    if (self.loader.progress == 1.0f) {
+    if (self.loader.progress >= 1.0f) {
         [self.loader setProgress:0.0];
     }
 

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FE6FCBEB9C7C1C2389D12784FC6577BDFE3E4BAF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F92E6A36657A88DBC266D9B8D5CB3B989B1D142F" : 0,
+    "FE6FCBEB9C7C1C2389D12784FC6577BDFE3E4BAF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D6D7BEA6-CBBD-44B0-B960-C5A2ACA43EB9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F92E6A36657A88DBC266D9B8D5CB3B989B1D142F" : "",
+    "FE6FCBEB9C7C1C2389D12784FC6577BDFE3E4BAF" : "MFLFillableTextLoader"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MFLTextFillLoading",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MFLTextFillLoading.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:MattFoley\/CrawlCreator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F92E6A36657A88DBC266D9B8D5CB3B989B1D142F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:MattFoley\/MFLFillableTextLoader.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FE6FCBEB9C7C1C2389D12784FC6577BDFE3E4BAF"
+    }
+  ]
+}
