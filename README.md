@@ -1,7 +1,7 @@
 # MFLFillableTextLoader
 Loading/progress indicator based on filling stroked text.
 
-![](http://i.imgur.com/BMumgcy.gif)
+![](http://i.imgur.com/8nVAZ6t.gif)
 
 You can create an MFLFillableTextLoader either in a xib or in code. Here is a short code example:
 
