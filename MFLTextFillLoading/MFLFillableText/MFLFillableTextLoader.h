@@ -33,6 +33,7 @@ UIColor* UIColorFromRGB(unsigned int rgbValue);
                      alignment:(NSTextAlignment)alignment
                      withFrame:(CGRect)frame;
 
+- (void)setFillableString:(NSString *)fillableString;
 
 /**
  *  String used for fillable label
